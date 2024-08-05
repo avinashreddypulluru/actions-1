@@ -16,7 +16,7 @@ jobs:
               run: echo "Welcome"
 
             - name: List files
-              run: ls
+              run: ls -a
 
             - name: Read file
               run: cat README.md
