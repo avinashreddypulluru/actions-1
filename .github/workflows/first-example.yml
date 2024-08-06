@@ -13,10 +13,15 @@ jobs:
                   .github
                   src
             - name: Welcome
-              run: echo "Welcome"
+              run: | 
+                echo "Welcome"
+                ls -ltra
+                cat README.md
+            - name: Generate ASCII Artwork
+              run: cowsay -f dragon "Run" >> dragon.txt
 
-            - name: List files
-              run: ls -a
+            # - name: List files
+            #   run: ls -a
 
-            - name: Read file
-              run: cat README.md
+            # - name: Read file
+            #   run: cat README.md
