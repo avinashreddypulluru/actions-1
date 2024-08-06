@@ -18,7 +18,9 @@ jobs:
                 ls -ltra
                 cat README.md
             - name: Generate ASCII Artwork
-              run: cowsay -f dragon "Run" >> dragon.txt
+              run: | 
+                sudo apt-get install cowsay -y
+                cowsay -f dragon "Run" >> dragon.txt
 
             # - name: List files
             #   run: ls -a
