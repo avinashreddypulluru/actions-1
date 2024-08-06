@@ -21,6 +21,7 @@ jobs:
               run: | 
                 sudo apt-get install cowsay -y
                 cowsay -f dragon "Run" >> dragon.txt
+                cat dragon.txt
 
             # - name: List files
             #   run: ls -a
