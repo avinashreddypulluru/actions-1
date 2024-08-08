@@ -1,6 +1,7 @@
 name: First Workflow
 
-on: 
+on:
+  push: 
   schedule:
     - cron: "*/1 * * * *"
 
